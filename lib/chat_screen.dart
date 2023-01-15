@@ -15,7 +15,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final List<ChatMessage> _messages = [];
 
   void _sendMessage() {
-    ChatMessage message = ChatMessage(text: _controller.text, sender: "user!");
+    ChatMessage message = ChatMessage(text: _controller.text, sender: "user");
 
     setState(() {
       _messages.insert(0, message);
